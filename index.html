@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation for Loqa - privacy-first productivity AI for remote workers">
+    <title>Loqa Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .content {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        .doc-section {
+            margin-bottom: 2rem;
+        }
+
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .doc-card {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #667eea;
+        }
+
+        .doc-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .doc-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .doc-card a:hover {
+            text-decoration: underline;
+        }
+
+        .coming-soon {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+            border: 1px solid #ffc107;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 3rem;
+        }
+
+        .links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .links a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loqa Documentation</h1>
+        <p>Privacy-first productivity AI for remote workers</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#getting-started">Getting Started</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="https://github.com/loqalabs">GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <section id="overview" class="doc-section">
+                <h2>Welcome to Loqa</h2>
+                <p>Loqa is a modular, privacy-first AI assistant designed for remote workers and distributed teams. It runs entirely on your own hardware, ensuring your data never leaves your control.</p>
+            </section>
+
+            <section id="getting-started" class="doc-section">
+                <h2>Getting Started</h2>
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <h3>Installation</h3>
+                        <p>Quick start guide to install and configure Loqa on your system.</p>
+                        <a href="https://github.com/loqalabs/loqa-core#installation">View Installation Guide →</a>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Architecture</h3>
+                        <p>Understand how Loqa's modular architecture works.</p>
+                        <a href="https://github.com/loqalabs/loqa-core/blob/main/docs/ARCHITECTURE.md">View Architecture →</a>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Getting Started</h3>
+                        <p>Step-by-step guide to get up and running with Loqa.</p>
+                        <a href="https://github.com/loqalabs/loqa-core/blob/main/docs/GETTING_STARTED.md">View Guide →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="architecture" class="doc-section">
+                <h2>Core Concepts</h2>
+                <div class="doc-grid">
+                    <div class="doc-card">
+                        <h3>Privacy-First Design</h3>
+                        <p>All processing happens locally. Your data stays on your hardware.</p>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Modular Architecture</h3>
+                        <p>Services run independently and can be distributed across hardware.</p>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Skills System</h3>
+                        <p>Extensible plugin architecture for custom workflows.</p>
+                        <a href="https://github.com/loqalabs/loqa-core/blob/main/docs/skills/SPEC.md">View Skills Spec →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="api" class="doc-section">
+                <h2>API & Development</h2>
+                <div class="doc-grid">
+                    <div class="doc-card coming-soon">
+                        <h3>API Reference</h3>
+                        <p>Complete API documentation for integrating with Loqa.</p>
+                        <p><em>Coming soon</em></p>
+                    </div>
+                    <div class="doc-card coming-soon">
+                        <h3>SDK Documentation</h3>
+                        <p>Build skills and integrations with the Loqa SDK.</p>
+                        <p><em>Coming soon</em></p>
+                    </div>
+                    <div class="doc-card">
+                        <h3>Contributing</h3>
+                        <p>Learn how to contribute to Loqa's development.</p>
+                        <a href="https://github.com/loqalabs/loqa-core/blob/main/CONTRIBUTING.md">View Guidelines →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="doc-section">
+                <h2>Need Help?</h2>
+                <p>For now, documentation is maintained in the individual repositories. Visit <a href="https://github.com/loqalabs">GitHub</a> to explore:</p>
+                <ul style="margin: 1rem 0 1rem 2rem;">
+                    <li><a href="https://github.com/loqalabs/loqa-core">loqa-core</a> - Runtime, SDKs, and core documentation</li>
+                    <li><a href="https://github.com/loqalabs/loqa-meta">loqa-meta</a> - Governance and RFCs</li>
+                    <li><a href="https://github.com/loqalabs/loqa-skills">loqa-skills</a> - Skills and examples</li>
+                </ul>
+                <p style="margin-top: 1rem;">This documentation site will be expanded as the project evolves.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loqa Labs. Open source, privacy-first productivity AI.</p>
+        <ul class="links">
+            <li><a href="https://loqa.run">Product</a></li>
+            <li><a href="https://loqalabs.com">Company</a></li>
+            <li><a href="https://github.com/loqalabs">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
